@@ -1,0 +1,7 @@
+.uploadwrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "content";
+}

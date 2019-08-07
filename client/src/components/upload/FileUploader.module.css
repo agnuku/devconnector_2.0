@@ -1,0 +1,17 @@
+.Appl {
+  text-align: center;
+  /*  background-color: rgb(206, 213, 223);*/
+  min-height: 100vh;
+
+  font-size: calc(10px + 2vmin);
+}
+
+.Card {
+  background-color: white;
+  padding: 32px;
+  width: 80%;
+
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
