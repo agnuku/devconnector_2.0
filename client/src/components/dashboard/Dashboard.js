@@ -36,6 +36,11 @@ const Dashboard = ({
               <i className="fas fa-user-minus" /> Upload CSV File
             </Link>
           </div>
+          <div className="my-2">
+            <Link className="btn btn-primary" to="/table">
+              <i className="fas fa-user-minus" /> Table Component
+            </Link>
+          </div>
         </Fragment>
       ) : (
         <Fragment>

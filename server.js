@@ -53,6 +53,20 @@ app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/posts", require("./routes/api/posts"));
 app.use("/upload-csv", router);
 
+//The below routes will all be updated to send requests to Java API so leave as is for now------
+//endpoint for get freshdata load from Semenu java (need to move to router and set api routes and model)
+app.get("/tracks", function(req, res, next) {
+  request({
+    uri: "https://jsonplaceholder.typicode.com/posts",
+    qs: {}
+  })
+    .on("error", function(err) {
+      console.log(err);
+    })
+    .pipe(res);
+  //console.log(res);
+});
+
 //------------------
 
 const upload = multer({ dest: "tmp/csv/" });

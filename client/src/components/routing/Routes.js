@@ -14,6 +14,8 @@ import Posts from "../posts/Posts";
 import Post from "../post/Post";
 import Upload from "../upload/Upload";
 import NotFound from "../layout/NotFound";
+import Table from "../table/NumbersTables";
+import AmzSalesReports from "../table/example/UsingExampleComponent";
 import PrivateRoute from "../routing/PrivateRoute";
 
 const Routes = () => {
@@ -32,6 +34,8 @@ const Routes = () => {
         <PrivateRoute exact path="/add-education" component={AddEducation} />
         <PrivateRoute exact path="/posts" component={Posts} />
         <PrivateRoute exact path="/upload" component={Upload} />
+        <PrivateRoute exact path="/table" component={Table} />
+        <PrivateRoute exact path="/exampletable" component={AmzSalesReports} />
         <PrivateRoute exact path="/posts/:id" component={Post} />
         <Route component={NotFound} />
       </Switch>
