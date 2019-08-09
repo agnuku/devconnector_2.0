@@ -115,11 +115,9 @@ router.post("/", upload.single("file"), async (req, res) => {
       });
 
       fs.unlinkSync(req.file.path); // remove temp file
-
+    })
+    .on("end", function() {
       console.log("Fourth");
-      //console.log(revisedResult);
-
-      //save to db
       AmazonMonthPL.findOne({ user: user }).then(amazonmonthpl => {
         if (amazonmonthpl) {
           // Update
